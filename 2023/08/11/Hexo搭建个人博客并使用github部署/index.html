@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Hexo搭建个人博客并使用github部署前言 作为一枚程序员有搭建博客的想法很久了，后来由于懒癌发作一直搁置。最近又萌生了个人博客的念头，网上开源的博客系统有很多，一时不知道用哪个好。之所以选用Hexo是正好看到B站羊哥的视频，他在推荐hexo这个框架。Hexo吸引我的主要有两点，第一点Hexo轻便操作简单，仅依赖nodejs就可以安装部署；第二点 Hexo支持github部署，这对没有公网ip">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/08/11/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo搭建个人博客并使用github部署前言 作为一枚程序员有搭建博客的想法很久了，后来由于懒癌发作一直搁置。最近又萌生了个人博客的念头，网上开源的博客系统有很多，一时不知道用哪个好。之所以选用Hexo是正好看到B站羊哥的视频，他在推荐hexo这个框架。Hexo吸引我的主要有两点，第一点Hexo轻便操作简单，仅依赖nodejs就可以安装部署；第二点 Hexo支持github部署，这对没有公网ip">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/picture/image-20230816141511447.png">
+<meta property="article:published_time" content="2023-08-11T05:07:15.797Z">
+<meta property="article:modified_time" content="2023-08-16T06:34:35.205Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/picture/image-20230816141511447.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Hexo搭建个人博客并使用github部署" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/11/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2/" class="article-date">
+  <time class="dt-published" datetime="2023-08-11T05:07:15.797Z" itemprop="datePublished">2023-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo搭建个人博客并使用github部署"><a href="#Hexo搭建个人博客并使用github部署" class="headerlink" title="Hexo搭建个人博客并使用github部署"></a>Hexo搭建个人博客并使用github部署</h1><p>前言 作为一枚程序员有搭建博客的想法很久了，后来由于懒癌发作一直搁置。最近又萌生了个人博客的念头，网上开源的博客系统有很多，一时不知道用哪个好。之所以选用Hexo是正好看到B站羊哥的视频，他在推荐hexo这个框架。Hexo吸引我的主要有两点，第一点Hexo轻便操作简单，仅依赖nodejs就可以安装部署；第二点 Hexo支持github部署，这对没有公网ip的人来说简直就是福音。</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty">https://www.bilibili.com/video/BV1Yb411a7ty</a></p>
+<h2 id="第一章-安装，本地部署"><a href="#第一章-安装，本地部署" class="headerlink" title="第一章  安装，本地部署"></a>第一章  安装，本地部署</h2><ol>
+<li><p>hexo安装首先要安装nodejs</p>
+</li>
+<li><p>安装好nodejs后，在命令行输入以下命令就会一键安装hexo框架</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>执行成功后可以使用<code>hexo -v</code>命令检查是否安装成功</p>
+</li>
+<li><p>创建一个文件夹，接下来的项目将会构建在这里  我这里创建了hexo-blog目录</p>
+</li>
+<li><p>在创建的目录下执行<code>hexo init</code> 脚本会自动构建好hexo项目</p>
+</li>
+<li><p>执行<code>hexo s</code> 启动项目 默认的端口是4000 启动完成后访问<a href="http://localhost:4000就能看到博客主页了">http://localhost:4000就能看到博客主页了</a></p>
+</li>
+</ol>
+<h2 id="第二章-发布到Github"><a href="#第二章-发布到Github" class="headerlink" title="第二章 发布到Github"></a>第二章 发布到Github</h2><ol>
+<li><p>在github上新建一个仓库，如果后期希望能通过互联网访问仓库名必须是”你的昵称+github.io”，比如我这里的仓库名必须这样写</p>
+<p><img src="/../picture/image-20230816141511447.png" alt="image-20230816141511447"></p>
+</li>
+<li><p>安装插件</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改配置 找到项目根目录下的_config.yml，替换文件中如下内容 repo就是github仓库提交地址，branch不填默认是main，注意github主分支不再使用master了</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/maybe11/maybe11.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>项目部署 如果是第一次部署需要设置邮箱和用户名</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$git config --global user.email&quot;xxx&quot;</span><br><span class="line">$git config --global user.name&quot;xxx&quot;</span><br></pre></td></tr></table></figure>
+<p>修改后执行命令重新生成项目文件</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$hexo clean</span><br><span class="line">$hexo g</span><br></pre></td></tr></table></figure>
+
+<p>推送命令很简单，只需要执行<code>hexo d</code></p>
+<p>PS: 推送过程中如果出现如下错误，很可能是自己写的博客文章格式不规范导致的</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fatal: <span class="title">unable</span> <span class="title">to</span> <span class="title">access</span> &#x27;<span class="title">https</span>://<span class="title">github.com</span>/<span class="title">maybe11</span>/<span class="title">maybe11.github.io.git</span>/&#x27;: <span class="title">Recv</span> <span class="title">failure</span>: <span class="title">Connection</span> <span class="title">was</span> <span class="title">reset</span></span></span><br><span class="line"><span class="function"><span class="title">FATAL</span> <span class="title">Something</span>&#x27;<span class="title">s</span> <span class="title">wrong</span>. <span class="title">Maybe</span> <span class="title">you</span> <span class="title">can</span> <span class="title">find</span> <span class="title">the</span> <span class="title">solution</span> <span class="title">here</span>: <span class="title">https</span>://<span class="title">hexo.io</span>/<span class="title">docs</span>/<span class="title">troubleshooting.html</span></span></span><br><span class="line"><span class="function"><span class="title">Error</span>: <span class="title">Spawn</span> <span class="title">failed</span></span></span><br><span class="line"><span class="function">    <span class="title">at</span> <span class="title">ChildProcess</span>.&lt;<span class="title">anonymous</span>&gt; (<span class="title">D</span>:\<span class="title">Application</span>\<span class="title">hexo</span>-<span class="title">blog</span>\<span class="title">node_modules</span>\<span class="title">hexo</span>-<span class="title">util</span>\<span class="title">lib</span>\<span class="title">spawn.js</span>:51:21)</span></span><br><span class="line"><span class="function">    <span class="title">at</span> <span class="title">ChildProcess.emit</span> (<span class="title">node:events</span>:513:28)</span></span><br><span class="line"><span class="function">    <span class="title">at</span> <span class="title">cp.emit</span> (<span class="title">D</span>:\<span class="title">Application</span>\<span class="title">hexo</span>-<span class="title">blog</span>\<span class="title">node_modules</span>\<span class="title">cross</span>-<span class="title">spawn</span>\<span class="title">lib</span>\<span class="title">enoent.js</span>:34:29)</span></span><br><span class="line"><span class="function">    <span class="title">at</span> <span class="title">ChildProcess._handle.onexit</span> (<span class="title">node:internal</span>/<span class="title">child_process</span>:291:12)</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="第三章-自定义主题"><a href="#第三章-自定义主题" class="headerlink" title="第三章 自定义主题"></a>第三章 自定义主题</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/11/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2/" data-id="clldczz9q0000a8t623cf9tur" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/08/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/08/11/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E4%BD%BF%E7%94%A8github%E9%83%A8%E7%BD%B2/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/11/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
